@@ -14,6 +14,7 @@ volume:
 
 permission:
 	@echo "🔐 Setting permissions for MinIo data directories ..."
+	mkdir -p $(DATA_DIR)
 	chmod -R 777 $(DATA_DIR)
 
 # ======================== Deploy ========================  
